@@ -33,4 +33,25 @@ function drawBasic() {
 }
 
 //var name= prompt("What's your name?");
-   // console.log("Welcome," + " " + name);
+   //alert("Welcome," + " " + name);
+
+google.setOnLoadCallback(drawChart);
+function drawChart() {
+
+    var data = google.visualization.arrayToDataTable([
+        ['Task', 'Hours per Day'],
+        ['Brown',  10],
+        ['Black',   6],
+        ['Grizzly', 5],
+        ['Polar',   2],
+        ['Panda',   1]
+    ]);
+
+    var options = {
+        title: 'Types of Bears'
+    };
+
+    var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+
+    chart.draw(data, options);
+}

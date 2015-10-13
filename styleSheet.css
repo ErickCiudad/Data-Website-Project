@@ -22,7 +22,7 @@ body {
     width: 150px;
     float:left;
     letter-spacing: 2px;
-    height: 365px;
+    height: 630px;
 }
 
 #contentBar {
@@ -32,15 +32,15 @@ body {
     font-family: "Times New Roman", Times, serif;
     width: 550px;
     float:right;
-
+    height: 630px;
 }
 
 #footBar{
     background-color: crimson;
-    position: relative; bottom: -400px; left: 190px;
+    position: relative; bottom: -700px; left: 190px;
     text-align: center;
     font-family: "Times New Roman", Times, serif;
-    width: 755px;
+    width: 895px;
 }
 
 ul {
